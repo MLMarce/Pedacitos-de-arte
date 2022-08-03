@@ -1,0 +1,241 @@
+*{
+    
+    
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1400px;
+    margin: auto
+
+}
+header{
+    padding: 0;
+    margin-top: 0px;
+    border-top: 0px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+
+ header .logo {
+    margin: 0;
+    padding: 25px 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 1.4em;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: coral;
+   
+ 
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover {
+    color: coral;
+}
+h1{
+    font-size: 3.7em;
+    color: coral;
+    text-decoration: underline;
+    text-transform: capitalize;
+    
+    
+}
+h2{
+    font-size: 2.5em;
+}
+p{
+    font-size: 1.25;
+}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+body {
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+    border: 5px;
+    border-style: inset;
+    border-color: black;
+    border-radius: 3px;
+    
+}
+.color-principal {
+    color: coral;
+}
+
+#nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/pedacitos_de_arte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#trabajitos{
+    
+    
+    background-color: rgb(30, 30, 30);
+    
+}
+#trabajitos .container{
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+}
+#trabajitos .container h2 {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: coral;
+    text-decoration: underline;
+}
+#trabajitos .container figure{
+    padding: 20px 20px;
+   flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+#trabajitos .container figure img{
+    margin: 1em;
+    width: 90vw;
+    height: 50vh;
+    object-fit: cover;
+}
+#contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 60vh;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+#contacto h2{
+    margin-bottom: 0;
+}
+#contacto ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+#contacto ul li{
+    margin: 20px 20px;
+    color: black;
+}
+#contacto ul li a{
+    color: black;
+    text-decoration: none;
+}
+#contacto ul li:hover {
+    color: coral;
+}
+#contacto ul li a:hover {
+    color: coral;
+}
+footer{
+    margin: 0;
+    color: rgba(100, 100, 100, 0.4);
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        top: -10px;
+        width: 100%;
+        
+       
+    }
+    header .container{
+        padding: 0;
+        margin: 0;
+        background-color: rgb(30, 30, 30);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .logo{
+        flex-direction: row;
+        
+    }
+    header nav {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 25.5px;
+        margin-right: 20px;
+    }
+    header a{
+        color: white;
+    }
+    #trabajitos{
+        height: 90vh;
+    }
+    #trabajitos .container h2 {
+        padding-top: 40px;
+    }
+    #trabajitos .container figure {
+        flex-direction: row;
+
+    }
+    #nombre {
+        height: 99vh;
+        
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.8)
+        )
+        ,url("media/pedacitos_de_arte.png");
+    }
+    #contacto{
+        height: 90vh;
+    }
+    #contacto h2 {
+        padding-bottom: 50px;
+    }
+    footer{
+        text-align: end;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+}
