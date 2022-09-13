@@ -79,13 +79,14 @@ h2{
 }
 p{
     font-size: 1.25;
+    color: #dcdada;
 }
 ul{list-style: none;}
 li{font-size: 1.25em;}
 body {
     margin: 0px;
     font-family: 'roboto', sans-serif;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(58, 10, 21);
     border: 5px;
     border-style: inset;
     border-color: black;
@@ -187,10 +188,10 @@ body {
 }
 #contacto ul li{
     margin: 20px 20px;
-    color: black;
+    color: #dcdada;
 }
 #contacto ul li a{
-    color: black;
+    color: #dcdada;
     text-decoration: none;
 }
 #contacto ul li:hover {
