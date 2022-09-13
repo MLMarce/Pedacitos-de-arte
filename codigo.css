@@ -173,7 +173,7 @@ body {
     width: auto;
     height: 90vh;
     margin-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 #contacto h2{
     margin-bottom: 0;
@@ -188,7 +188,12 @@ body {
 }
 #contacto ul li{
     margin: 20px 20px;
-    color: #dcdada;
+    color: #dcdada; 
+    border: 1px solid rgb(10, 10, 10);
+    background: rgb(10, 10, 10);
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0px 0px 10px #a31;
 }
 #contacto ul li a{
     color: #dcdada;
@@ -221,7 +226,7 @@ footer{
     header .container{
         padding: 0;
         margin: 0;
-        background-color: rgb(30, 30, 30);
+        background-color: rgb(10, 10, 10);
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
@@ -241,6 +246,7 @@ footer{
     }
     #trabajos{
         min-height: 100vh;
+        background-color: rgb(10, 10, 10);
     }
     #trabajos .container h2 {
         padding-top: 0px;
@@ -267,10 +273,24 @@ footer{
     }
     #contacto{
         height: 90vh;
+        padding-bottom: 50px;
     }
     #contacto h2 {
         padding-bottom: 50px;
     }
+
+    #contacto ul li {
+        border: 1px solid rgb(10, 10, 10);
+        border-radius: 5px;
+        padding: 3px;
+        box-shadow: none;
+    }
+
+    #contacto ul li:hover {
+        box-shadow: 0px 0px 10px #a31;
+        cursor: pointer;
+    }
+
     footer{
         text-align: end;
         justify-content: flex-end;
