@@ -12,20 +12,25 @@ html{
 
 }
 header{
+    display: flex;
     padding: 0;
     margin-top: 0px;
-    border-top: 0px;
+    border-bottom: 1px solid black;
     height: 93px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: -25px;
-    background-color: black;
+    top: -10px;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 10px;
+    height: 0;
+    align-content: center;
+    align-items: center;
     
 }
 
@@ -38,6 +43,7 @@ header .container{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   text-align: center;
    color: coral;
    
    
@@ -54,7 +60,7 @@ header a {
     padding: 0px 4px;
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: coral;
 }
 header a:hover {
     color: coral;
@@ -62,8 +68,9 @@ header a:hover {
 h1{
     font-size: 3.7em;
     color: coral;
-    text-decoration: underline;
     text-transform: capitalize;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     
     
 }
@@ -113,12 +120,12 @@ body {
 }
 #trabajos{
     
-    
+    min-height: 100vh;
     background-color: rgb(30, 30, 30);
     
 }
 #trabajos .container{
-    padding-top: 10px;
+    padding-top: 50px;
     text-align: center;
     display: block;
 }
@@ -126,7 +133,6 @@ body {
     margin-bottom: 10px;
     padding-top: 20px;
     color: coral;
-    text-decoration: underline;
 }
 #trabajos .container-trabajos {
     padding: 20px 20px;
@@ -164,7 +170,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: auto;
-    height: 60vh;
+    height: 90vh;
     margin-top: 30px;
     padding-bottom: 50px;
 }
@@ -217,6 +223,8 @@ footer{
         background-color: rgb(30, 30, 30);
         flex-direction: row;
         justify-content: space-between;
+        height: 100%;
+        width: 100%;
     }
     header .logo{
         flex-direction: row;
@@ -225,7 +233,6 @@ footer{
     header nav {
         flex-direction: row;
         align-items: flex-end;
-        margin-bottom: 25.5px;
         margin-right: 20px;
     }
     header a{
@@ -235,7 +242,7 @@ footer{
         min-height: 100vh;
     }
     #trabajos .container h2 {
-        padding-top: 40px;
+        padding-top: 0px;
     }
     #trabajos .container-trabajos {
         flex-direction: row;

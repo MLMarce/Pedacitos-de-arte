@@ -1,0 +1,54 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #888;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.form {
+    margin: auto;
+    margin-top: 50px;
+    padding:20px 50px;
+    width: 400px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #a31;
+}
+
+.form-input {
+    margin: 5px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a31;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #333, #112);
+    color: #dcdada;
+}
+
+.form-input::placeholder {
+    color: #aaaaaa;
+}
+
+.form-input:focus {
+    box-shadow: 0px 0px 10px #a31;
+}
+
+.message {
+    height: 80px;
+    width: 90%;
+    resize: none;
+}
+
+.send {
+    cursor: pointer;
+    width: 70%;
+}
