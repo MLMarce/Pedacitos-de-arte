@@ -44,7 +44,7 @@ header .container{
    flex-direction: column;
    align-items: flex-start;
    text-align: center;
-   color: coral;
+   color: #72b;
    
    
  
@@ -60,17 +60,16 @@ header a {
     padding: 0px 4px;
     text-decoration: none;
     font-weight: bold;
-    color: coral;
+    color: #72b;
 }
 header a:hover {
-    color: coral;
+    color: #72b;
 }
 h1{
     font-size: 3.7em;
-    color: coral;
+    color: #72b;
     text-transform: capitalize;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    text-shadow: 0px 0px 10px #111;
     
     
 }
@@ -79,14 +78,14 @@ h2{
 }
 p{
     font-size: 1.25;
-    color: #dcdada;
+    color: #333;
 }
 ul{list-style: none;}
 li{font-size: 1.25em;}
 body {
     margin: 0px;
     font-family: 'roboto', sans-serif;
-    background-color: rgb(58, 10, 21);
+    background-color: #81f4;
     border: 5px;
     border-style: inset;
     border-color: black;
@@ -94,7 +93,7 @@ body {
     
 }
 .color-principal {
-    color: coral;
+    color: #72b;
 }
 
 #nombre {
@@ -133,7 +132,7 @@ body {
 #trabajos .container h2 {
     margin-bottom: 10px;
     padding-top: 20px;
-    color: coral;
+    color: #97f;
 }
 #trabajos .container-trabajos {
     padding: 20px 20px;
@@ -151,7 +150,7 @@ body {
    height: 15vh;
    width: 90vw;
    margin: 5px;
-   border: 2px solid coral;
+   border: 2px solid #72b;
    border-radius: 10px;
    transition: all 1s ease-in;
 }
@@ -162,7 +161,7 @@ body {
 }
 
 .container-trabajos__panel h3 {
-    color: coral;
+    color: #ccc;
     text-shadow: 0px 0px 10px black;
 }
 
@@ -201,10 +200,10 @@ body {
     text-decoration: none;
 }
 #contacto ul li:hover {
-    color: coral;
+    color: #72b;
 }
 #contacto ul li a:hover {
-    color: coral;
+    color: #72b;
 }
 footer{
     margin: 0;
